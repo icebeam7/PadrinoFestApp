@@ -1,0 +1,9 @@
+INSERT INTO eventos VALUES(1, 'PadrinoFest MAUI', '2022-11-05');
+INSERT INTO eventos VALUES(2, 'PadrinoFest Xamarin', '2022-11-12');
+INSERT INTO speakers VALUES(1, 'Luis Beltran', 1);
+INSERT INTO speakers VALUES(2, 'Luis Beltran', 2);
+INSERT INTO speakers VALUES(3, 'Humberto Jaimes', 1);
+INSERT INTO speakers VALUES(4, 'Humberto Jaimes', 2);
+INSERT INTO speakers VALUES(5, 'Jesus Gil', 1);
+INSERT INTO speakers VALUES(6, 'Jesus Gil', 2);
+INSERT INTO speakers VALUES(7, 'Jesus Gil', 3);

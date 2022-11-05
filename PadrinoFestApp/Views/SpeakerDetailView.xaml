@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PadrinoFestApp.Views.SpeakerDetailView"
+             xmlns:vm="clr-namespace:PadrinoFestApp.ViewModels"
+             xmlns:model="clr-namespace:PadrinoFestApp.Models"
+             x:DataType="vm:SpeakerDetailViewModel"
+             Title="{Binding Item.NombreDelSpeaker}">
+
+    <Grid Margin="10"
+          ColumnSpacing="10"
+          RowSpacing="10"
+          RowDefinitions="Auto,Auto,Auto,*"
+          ColumnDefinitions="*,2*">
+
+        <Label Text="Nombre"
+               FontSize="Large"/>
+
+        <Entry Text="{Binding Item.NombreDelSpeaker}"
+               Grid.Column="1"
+               HorizontalOptions="Start"
+               WidthRequest="300"/>
+
+        <Label Text="Evento"
+               FontSize="Large"
+               Grid.Row="1"/>
+
+        <Entry Text="{Binding Item.EventoId}" 
+               Grid.Row="1"
+               Grid.Column="1"
+               HorizontalOptions="Start"
+               WidthRequest="150"/>
+
+        <Button Text="Save"
+                Command="{Binding SaveItemCommand}"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"/>
+    </Grid>
+</ContentPage>
